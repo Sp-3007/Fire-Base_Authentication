@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel = "stylesheet" href = "main.css">
+  <script src="https://accounts.google.com/gsi/client" async></script>
+</head>
+<body>
+  <div class = "login-container">
+    <div id= "main">
+      <h1>Sign In</h1>
+      <input id = "email" type = "text" placeholder = "Email"></input>
+      <input id = "password" type = "password" placeholder = "Password"></input>
+      <a id="forgot-link" >Forgot Passwoord?, Click to reset</a>
+      <button class="btn" id = "submit">Submit</button>
+      <p><span>or</span></p>
+      <button class="btn" id = "sign-up">Sign Up</button>
+      <button type="button" id="googleSignInBtn" class="login-with-google-btn" >
+        Sign in with Google
+      </button>
+    </div>
+
+    <div id = "create-acct">
+      <h1>Create an Account</h1>
+      <div id="div-selection" >
+          <div id="inner-div">
+            <input type="radio" id="user" name="userType" value="user" checked  >
+            <label for="user">User</label>
+          </div>
+          <div>
+            <input type="radio" id="dignosticcenter" name="userType" value="diagnosticCenter">
+            <label for="dignosticCenter">Diagnostic center<label>
+          </div>  
+      </div>
+    <div id="register-part">
+      <input id = "email-signup" type = "text" placeholder = "Email *"></input>
+      <input id = "confirm-email-signup" type = "email" placeholder = "Confirm Email *"></input>
+      <input id = "password-signup" type = "password" placeholder = "Password *"></input>
+      <input id = "confirm-password-signup" type = "password" placeholder = "Confirm Password *"></input>
+      <button class="btn" id = "create-acct-btn">Create Account</button>
+      <button class="btn" id = "return-btn">Return to Login</button>
+    </div>
+    </div>
+    
+  </div>
+  <script type = "module" src = "script.js"></script>
+</body>
+</html>
